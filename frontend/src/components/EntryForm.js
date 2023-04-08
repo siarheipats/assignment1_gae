@@ -11,6 +11,7 @@ const EntryForm = () => {
         e.preventDefault();
         const newentry = { guestName, entryText };
         const response = await fetch('https://assignment1-gae-patss.ue.r.appspot.com/api/entries/', {
+            mode: 'cors',
             method: 'POST',
             body: JSON.stringify(newentry),
             headers: {

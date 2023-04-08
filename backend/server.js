@@ -18,6 +18,7 @@ app.use(express.json({ extended: true }));
 
 // Routes
 app.get('/', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
     res.json({ mssg: "Welcome to Journal Entries API" });
 })
 app.use('/api/entries', entriesRoutes);

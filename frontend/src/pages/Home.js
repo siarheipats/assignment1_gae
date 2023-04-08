@@ -8,7 +8,7 @@ const Home = () => {
     const { entries, dispatch } = useEntriesContext();
     useEffect(() => {
         const fetchEntries = async () => {
-            const response = await fetch('https://assignment1-gae-patss.ue.r.appspot.com/api/entries/');
+            const response = await fetch('https://assignment1-gae-patss.ue.r.appspot.com/api/entries/', { mode: 'cors' });
             const json = await response.json();
             if (response.ok) {
                 dispatch({ type: 'SET_ENTRIES', payload: json });

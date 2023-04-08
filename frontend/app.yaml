@@ -1,8 +1,12 @@
 runtime: nodejs16
-2handlers:
-4  - url: /(.*\..+)$
-5    static_files: build/\1
-6    upload: build/(.*\..+)$
-8  - url: /.*
-9    static_files: build/index.html
-10    upload: build/index.html
+handlers:
+  - url: /(.*\..+)$
+    http_headers: 
+      Access-Control-Allow-Origin: https://assignemtn1-gae-react.uk.r.appspot.com
+    static_files: build/\1
+    upload: build/(.*\..+)$
+  - url: /.*
+    http_headers: 
+      Access-Control-Allow-Origin: https://assignemtn1-gae-react.uk.r.appspot.com
+    static_files: build/index.html
+    upload: build/index.html

@@ -10,7 +10,7 @@ const EntryForm = () => {
     const handleSubmitEntry = async (e) => {
         e.preventDefault();
         const newentry = { guestName, entryText };
-        const response = await fetch('/api/entries', {
+        const response = await fetch('https://assignment1-gae-patss.ue.r.appspot.com/api/entries/', {
             method: 'POST',
             body: JSON.stringify(newentry),
             headers: {

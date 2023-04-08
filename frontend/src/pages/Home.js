@@ -25,7 +25,7 @@ const Home = () => {
                 ))}
             </div>
             <EntryForm />
-            <footer>Assignment 1 - GAE - Siarhei Pats. </footer>
+            <footer>Assignment 1 - GAE - Siarhei Pats. <a href='https://github.com/siarheipats/assignment1_gae'>Check out this project on GitHuib</a></footer>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 const EntryDetails = ({ entry }) => {
     return (
-        <div className="workout-details">
-            <h4><strong>Guest:</strong> {entry.guestName}</h4>
-            <p><strong>Message:</strong> {entry.entryText}</p>
+        <div className="entry-details">
+            <h4><strong>{entry.guestName}</strong> said:</h4>
+            <p>{entry.entryText}</p>
             <p>{entry.createdAt}</p>
         </div>
     )

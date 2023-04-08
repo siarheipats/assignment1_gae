@@ -1,9 +1,7 @@
-/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
-/* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #000000;
   --error: #e7195a;
 }
 
@@ -37,14 +35,13 @@ header a {
   margin: 0 auto;
 }
 
-/* homepage */
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
 
-.workout-details {
+.entry-details {
   background: #fff;
   border-radius: 4px;
   margin: 20px auto;
@@ -53,19 +50,19 @@ header a {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.workout-details h4 {
+.entry-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
   color: var(--primary);
 }
 
-.workout-details p {
+.entry-details p {
   margin: 0;
   font-size: 0.9em;
   color: #555;
 }
 
-.workout-details span {
+.entry-details span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -76,7 +73,6 @@ header a {
   color: #333;
 }
 
-/* new workout form */
 label,
 input {
   display: block;
@@ -113,4 +109,14 @@ div.error {
 
 input.error {
   border: 1px solid var(--error);
+}
+
+footer {
+  position: fixed;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
 }
